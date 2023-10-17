@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iNWP/Zv0ehwOmWjCyf+VDYiNl2ZrDVQWhwPsnqafFqLd6orx2pAl5Ol4Pw3y9qz0acgj7WP+MYml82bafIfcAA==",
+  "dgSpecHash": "ueq79r8lyrLL6QjmJR3QNCkDUdgpEUJvLI5e2hO9Plo7iXq5DBhgvM/fXLyYjIGWncnKriULy5LkzXEt5vc/6w==",
   "success": true,
   "projectFilePath": "/Users/fintechai/Projects/NBWSTech/NBWSTech.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "/Users/fintechai/.nuget/packages/microsoft.jsinterop/6.0.7/microsoft.jsinterop.6.0.7.nupkg.sha512",
     "/Users/fintechai/.nuget/packages/microsoft.jsinterop.webassembly/6.0.7/microsoft.jsinterop.webassembly.6.0.7.nupkg.sha512",
     "/Users/fintechai/.nuget/packages/mudblazor/6.0.13/mudblazor.6.0.13.nupkg.sha512",
+    "/Users/fintechai/.nuget/packages/publishspaforgithubpages.build/2.1.0/publishspaforgithubpages.build.2.1.0.nupkg.sha512",
     "/Users/fintechai/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "/Users/fintechai/.nuget/packages/system.io.pipelines/6.0.3/system.io.pipelines.6.0.3.nupkg.sha512",
     "/Users/fintechai/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

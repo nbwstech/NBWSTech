@@ -1,0 +1,17 @@
+@inherits AdBase
+
+<div class="ad-container leaderboard mb-10" >
+<MudContainer MaxWidth="MaxWidth.Small">
+    <MudPaper Height="89px" Width="100%" Square="true" >
+    <h3>@Title</h3>
+    <img src="@ImagePath" alt="Ad Image" style="width: 100%; height: auto;" />
+    @if (!string.IsNullOrEmpty(Description))
+    {
+        <p>@Description</p>
+    }
+    </MudPaper>
+</MudContainer>
+
+
+    
+</div>

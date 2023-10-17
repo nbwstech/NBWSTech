@@ -32,12 +32,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/fintechai/Projects/NBWSTech/Shared/Ads/AdBase.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0Fkcy9BZEJhc2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fintechai/Projects/NBWSTech/Shared/Ads/AdLeaderboard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0Fkcy9BZExlYWRlcmJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/fintechai/Projects/NBWSTech/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/fintechai/Projects/NBWSTech/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/fintechai/Projects/NBWSTech/Shared/VendorSpotlight.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1ZlbmRvclNwb3RsaWdodC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/fintechai/Projects/NBWSTech/_Imports.razor]

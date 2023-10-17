@@ -1,0 +1,48 @@
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.mud-appbar {
+    background-color: #1E1E1E;
+    color: gold; /* for text inside the appbar */
+}
+
+.mud-appbar a {
+    color: gold; /* for links inside the appbar */
+}
+
+.mud-appbar .mud-icon {
+    color: gold; /* for icons inside the appbar */
+}
+
+.mud-appbar .mud-btn {
+    background-color: gold; /* for buttons inside the appbar */
+    color: black; /* text color of buttons inside the appbar */
+}
+
+/* Background color of the MudDrawer */
+.mud-drawer {
+    background-color: #2A2A2A;
+}
+
+/* Non-selected text color for MudNavLink inside MudDrawer */
+.mud-drawer .mud-nav-link {
+    color: #B0B0B0;
+}
+
+/* Highlight for selected MudNavLink and its text color inside MudDrawer */
+.mud-drawer .mud-nav-link.mud-selected {
+    background-color: #FFD700;
+    color: #E0E0E0;
+}

@@ -426,6 +426,12 @@
           "buildMultiTargeting/MudBlazor.props": {}
         }
       },
+      "PublishSPAforGitHubPages.Build/2.1.0": {
+        "type": "package",
+        "build": {
+          "build/PublishSPAforGitHubPages.Build.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -946,6 +952,12 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/MudBlazor.props": {}
+        }
+      },
+      "PublishSPAforGitHubPages.Build/2.1.0": {
+        "type": "package",
+        "build": {
+          "build/PublishSPAforGitHubPages.Build.targets": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.0": {
@@ -1667,6 +1679,32 @@
         "staticwebassets/MudBlazor.min.js.gz"
       ]
     },
+    "PublishSPAforGitHubPages.Build/2.1.0": {
+      "sha512": "VRWnrSgdtrWazAz+ECswdRqGYwE7KyKwh4HtdWuH2jDjBjwtaM4NiSY1c962XU3soLW2EDnIOMJ08EJRX2VDqA==",
+      "type": "package",
+      "path": "publishspaforgithubpages.build/2.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/PublishSPAforGitHubPages.Build.targets",
+        "bundle/scripts/brotliloader.js",
+        "bundle/scripts/brotliloader.min.js",
+        "bundle/scripts/decode.js",
+        "bundle/scripts/decode.min.js",
+        "nupkg-icon.png",
+        "publishspaforgithubpages.build.2.1.0.nupkg.sha512",
+        "publishspaforgithubpages.build.nuspec",
+        "tools/Brotli.Core.dll",
+        "tools/PublishSPAforGitHubPages.Build.dll",
+        "tools/runtimes/linux/native/brolib_x64.so",
+        "tools/runtimes/linux/native/brolib_x86.so",
+        "tools/runtimes/osx/native/brolib_x64.dylib",
+        "tools/runtimes/win/native/brolib_x64.dll",
+        "tools/runtimes/win/native/brolib_x86.dll"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/6.0.0": {
       "sha512": "frQDfv0rl209cKm1lnwTgFPzNigy2EKk1BS3uAvHvlBVKe5cymGyHO+Sj+NLv5VF/AhHsqPIUUwya5oV4CHMUw==",
       "type": "package",
@@ -1828,7 +1866,8 @@
     "net6.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 6.0.7",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.7",
-      "MudBlazor >= 6.0.13"
+      "MudBlazor >= 6.0.13",
+      "PublishSPAforGitHubPages.Build >= 2.1.0"
     ]
   },
   "packageFolders": {
@@ -1881,6 +1920,10 @@
           "MudBlazor": {
             "target": "Package",
             "version": "[6.0.13, )"
+          },
+          "PublishSPAforGitHubPages.Build": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           }
         },
         "imports": [

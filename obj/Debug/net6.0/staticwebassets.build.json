@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pNGTr6lX+cEICavy21igi4yqjX92w/JnZj+ZJu91wBs=",
+  "Hash": "03EOU10zI6YMYRhY6vbobZDdLdXcaIEY18SnwUG6b5M=",
   "Source": "NBWSTech",
   "BasePath": "/",
   "Mode": "Root",
@@ -6900,6 +6900,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/fintechai/Projects/NBWSTech/bin/Debug/net6.0/wwwroot/_framework/System.Diagnostics.Tracing.dll"
+    },
+    {
+      "Identity": "/Users/fintechai/Projects/NBWSTech/wwwroot/.DS_Store",
+      "SourceId": "NBWSTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fintechai/Projects/NBWSTech/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/fintechai/Projects/NBWSTech/wwwroot/css/app.css",
+      "SourceId": "NBWSTech",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/fintechai/Projects/NBWSTech/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "css/app.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/app.css"
     },
     {
       "Identity": "/Users/fintechai/Projects/NBWSTech/wwwroot/favicon.ico",
