@@ -1,0 +1,52 @@
+@page "/experiences"
+
+@using System.Text.Json
+@using MudBlazor
+@inject HttpClient Http
+
+<PageTitle>Experiences</PageTitle>
+
+<MudText Typo="Typo.h3" GutterBottom="true">Experiences</MudText>
+
+<MudTable Items="customerExperiences">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Customer Experiences</MudText>
+        <MudSpacer />
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh>Name</MudTh>
+        <MudTh>Purpose</MudTh>
+        <MudTh>Technology</MudTh>
+        <MudTh>Software</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Purpose">@context.Purpose</MudTd>
+        <MudTd DataLabel="Technology">@context.Technology</MudTd>
+        <MudTd DataLabel="Software">@context.Software</MudTd>
+    </RowTemplate>
+</MudTable>
+
+@code {
+    private List<CustomerExperience> customerExperiences;
+    private string searchString;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var json = await Http.GetStringAsync("data/experiences.json");
+        customerExperiences = JsonSerializer.Deserialize<List<CustomerExperience>>(json);
+    }
+}
+
+
+@code{
+    public class CustomerExperience
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? Technology { get; set; }
+        public string? Purpose { get; set; }
+        public string? Software { get; set; }
+    }
+
+}

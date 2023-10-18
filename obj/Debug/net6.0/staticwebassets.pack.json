@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets/css/app.css"
     },
     {
+      "Id": "/Users/fintechai/Projects/NBWSTech/wwwroot/data/equipment.json",
+      "PackagePath": "staticwebassets/data/equipment.json"
+    },
+    {
+      "Id": "/Users/fintechai/Projects/NBWSTech/wwwroot/data/events.json",
+      "PackagePath": "staticwebassets/data/events.json"
+    },
+    {
+      "Id": "/Users/fintechai/Projects/NBWSTech/wwwroot/data/experiences.json",
+      "PackagePath": "staticwebassets/data/experiences.json"
+    },
+    {
       "Id": "/Users/fintechai/Projects/NBWSTech/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

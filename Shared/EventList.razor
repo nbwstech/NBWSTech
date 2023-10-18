@@ -1,0 +1,39 @@
+@inject HttpClient Http
+
+@code {
+    private List<EventItem> Events { get; set; } = new List<EventItem>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Assuming you have the JSON file named "events.json" in the "wwwroot/data" directory
+        var response = await Http.GetFromJsonAsync<List<EventItem>>("data/events.json");
+        Events = response ?? new List<EventItem>();
+    }
+}
+
+@foreach (var eventItem in Events)
+{
+    <MudCard class="m-2 card-animation card-content">
+        <MudCardContent Class="border-4">
+            <!-- Summary -->
+            <MudText Typo="Typo.h6" Class="title-animation">@eventItem.Summary</MudText>
+
+            <!-- Date Range -->
+            <MudText Class="content-animation mb-5">Start: @eventItem.Start - End: @eventItem.End</MudText>
+
+            <!-- STAR Description & STAR Model -->
+            <!-- <MudText Class="content-animation">@eventItem.STARDescription</MudText> -->
+            <MudText Class="star-animation mb-2"><b>Situation:</b> @eventItem.Situation</MudText>
+            <MudText Class="star-animation mb-2"><b>Task:</b> @eventItem.Task</MudText>
+            <MudText Class="star-animation mb-2"><b>Action:</b> @eventItem.Action</MudText>
+            <MudText Class="star-animation mb-2"><b>Result:</b> @eventItem.Result</MudText>
+
+            <!-- Additional Fields -->
+            <MudText Class="content-animation mb-5 mt-5">Recommended Day: @eventItem.RecommendedDay</MudText>
+            <MudText Class="content-animation">Duration: @eventItem.DurationHours Hours</MudText>
+            <MudText Class="content-animation">Priority: @eventItem.Priority</MudText>
+            <MudText Class="content-animation">Recurrence: @eventItem.Recurrence</MudText>
+        </MudCardContent>
+    </MudCard>
+}
+

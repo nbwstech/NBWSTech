@@ -819,3 +819,6 @@
 /Users/fintechai/Projects/NBWSTech/obj/Release/net6.0/refint/NBWSTech.dll
 /Users/fintechai/Projects/NBWSTech/obj/Release/net6.0/NBWSTech.pdb
 /Users/fintechai/Projects/NBWSTech/obj/Release/net6.0/ref/NBWSTech.dll
+/Users/fintechai/Projects/NBWSTech/bin/Release/net6.0/docs/web.config
+/Users/fintechai/Projects/NBWSTech/bin/Release/net6.0/docs/wwwroot/sample-data/weather.json
+/Users/fintechai/Projects/NBWSTech/bin/Release/net6.0/docs/wwwroot/_framework/blazor.boot.json

@@ -1,0 +1,81 @@
+@page "/equipment"
+@using MudBlazor
+@inject HttpClient Http
+
+<PageTitle>Equipment</PageTitle>
+
+<MudText Typo="Typo.h5">Equipment</MudText>
+
+<MudTextField @bind-Value="searchString" Placeholder="Search..."></MudTextField>
+
+<MudTable Items="_equipment" FilterFunc="@FilterFunc" PageSize="15">
+    <!-- <ToolBarContent>
+        <MudButton Icon="Icons.Material.Outlined.FilterList" Size="Size.Small" OnClick="@(() => _drawer.Open())">Filter</MudButton>
+    </ToolBarContent> -->
+    <HeaderContent>
+    <MudTh>Category</MudTh>
+    <MudTh>Type</MudTh>
+    <MudTh>Description</MudTh>
+    <MudTh>Model Number</MudTh>
+    <MudTh>Details</MudTh>
+    <MudTh>Quantity</MudTh>
+    <MudTh>Additional Info</MudTh>
+</HeaderContent>
+<RowTemplate>
+    <MudTd DataLabel="Category">@context.Category</MudTd>
+    <MudTd DataLabel="Type">@context.Type</MudTd>
+    <MudTd DataLabel="Description">@context.Description</MudTd>
+    <MudTd DataLabel="Model Number">@context.ModelNumber</MudTd>
+    <MudTd DataLabel="Details">@context.Details</MudTd>
+    <MudTd DataLabel="Quantity">@context.Quantity</MudTd>
+    <MudTd DataLabel="Additional Info">@context.AdditionalInfo</MudTd>
+</RowTemplate>
+
+</MudTable>
+
+@code {
+    private List<EquipmentItem> _equipment = new List<EquipmentItem>();
+    private string searchString = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _equipment = await Http.GetFromJsonAsync<List<EquipmentItem>>("data/equipment.json");
+    }
+
+    private bool FilterFunc(EquipmentItem equipmentItem)
+    {
+        if (string.IsNullOrWhiteSpace(searchString))
+            return true;
+        if (equipmentItem.Category.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (equipmentItem.Type.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        // Add other fields if needed
+        return false;
+    }
+
+    public class EquipmentItem
+{
+    // Property to hold the Category of the equipmentItem
+    public string? Category { get; set; }
+
+    // Property to hold the Type of the equipmentItem
+    public string? Type { get; set; }
+
+    // Property to hold the Description of the equipmentItem
+    public string? Description { get; set; }
+
+    // Property to hold the Model Number of the equipmentItem
+    public string? ModelNumber { get; set; }
+
+    // Property to hold the Details related to the equipmentItem
+    public string? Details { get; set; }
+
+    // Property to hold the Quantity of the equipmentItem item
+    public int Quantity { get; set; }
+
+    // Property to hold any Additional Information related to the equipmentItem
+    public string? AdditionalInfo { get; set; }
+}
+
+}

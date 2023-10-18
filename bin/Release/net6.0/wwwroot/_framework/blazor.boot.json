@@ -197,13 +197,13 @@
       "mscorlib.dll": "sha256-jzikATOUXZ4ADvFQ16S0KGAR1MWeQw31aXXccUFs08w=",
       "netstandard.dll": "sha256-87jtKWKXMg3nXj8D1mLQabI+cTWOPvy5ll3sBYj\/ZhI=",
       "System.Private.CoreLib.dll": "sha256-gjd6M5pA\/nOZEI8pvs9SPUAFG1Jppwr9Xl6v7Wab8Fc=",
-      "NBWSTech.dll": "sha256-D8WVI0dvB+AjYJbUjpGzt\/9gEEhhOZ9PcHEyHWe8H4Q="
+      "NBWSTech.dll": "sha256-PceeigCJyi4V9XZs+4rCktZivuE+pt4r9SEbfnQfKrw="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "NBWSTech.pdb": "sha256-9YPyns3Wl2jsodVlCrTD8I24A67yJKMDqmAn79Cl60c="
+      "NBWSTech.pdb": "sha256-8Z4AET+GgPfvwfThEwhAb0BrJisV3iePC9IG9Bv4sDs="
     },
     "runtime": {
       "dotnet.6.0.23.y491cytxr1.js": "sha256-YYG9NE7FnTlr1qMbQzBTzUGZOcLX64xP2Z1+An1jT6U=",

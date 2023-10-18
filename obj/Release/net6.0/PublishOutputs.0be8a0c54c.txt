@@ -1,1 +1,4 @@
+/Users/fintechai/Projects/NBWSTech/bin/Release/net6.0/publish/docs/web.config
+/Users/fintechai/Projects/NBWSTech/bin/Release/net6.0/publish/docs/wwwroot/sample-data/weather.json
+/Users/fintechai/Projects/NBWSTech/bin/Release/net6.0/publish/docs/wwwroot/_framework/blazor.boot.json
 /Users/fintechai/Projects/NBWSTech/bin/Release/net6.0/publish/web.config

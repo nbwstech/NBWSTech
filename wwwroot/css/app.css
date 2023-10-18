@@ -46,3 +46,163 @@ a:hover {
     background-color: #FFD700;
     color: #E0E0E0;
 }
+
+/* General styles */
+body {
+    background-color: black;
+}
+
+/* MudBlazor Card Animation */
+.card-animation {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Text animations */
+.title-animation {
+    animation: titleFadeIn 1.2s ease;
+}
+
+@keyframes titleFadeIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.content-animation {
+    animation: contentFadeIn 1.4s ease;
+}
+
+@keyframes contentFadeIn {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Dark Mode Colors */
+.card-content {
+    background-color: #1a1a1a;
+    color: gold;
+}
+
+/* Situations, Task, Action, Result - will be treated a bit differently */
+.star-animation {
+    animation: starFadeIn 1.6s ease;
+}
+
+@keyframes starFadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Coloring based on ColorID - Example for simplicity */
+.color-red {
+    color: red;
+}
+.color-blue {
+    color: blue;
+}
+/* ... Add more color classes as needed based on ColorID values ... */
+
+h2 {
+    margin-top:50px;
+    animation: fadeIn 1.5s;
+}
+
+h3 {
+    margin-top: 20px;
+    animation: fadeIn 1.5s;
+}
+
+mud-typography {
+    margin-top: 20px;
+    animation: fadeIn 1.5s;
+}
+
+ul {
+    animation: slideIn 2s;
+}
+
+mud-list-item{
+    animation: slideIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.mud-typo-h5 {
+    color: gold !important;
+}
+
+.type-writer-animation {
+    animation: typeWriter 1s steps(60, end);
+}
+
+@keyframes typeWriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.step-animation {
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+}
+
+.dark-panel .mud-expansion-panel {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+.dark-panel .mud-expansion-panel:hover {
+    background-color: #1d1d1d; /* Slightly lighter dark background for hover */
+}
+
+/* You can adjust the colors as needed */
