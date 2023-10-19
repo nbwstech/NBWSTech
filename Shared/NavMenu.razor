@@ -9,24 +9,24 @@
     <MudNavLink Href="multivendor-portal" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.ArrowUpward">Multi-Vendor Portal Plan</MudNavLink>
     
     <!-- Example of 3-Level Expandable Menu -->
-    <MudNavGroup Title="Services" Icon="@Icons.Material.Filled.Layers">
+    <MudNavGroup Title="Service Menus" Icon="@Icons.Material.Filled.Layers">
         <MudNavMenu>
-            <MudNavLink Href="level1/sublevel1" Match="NavLinkMatch.Prefix">Package Upgrades & Extras</MudNavLink>
-            <MudNavGroup Title="Audio Production Menu" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
+            <MudNavGroup Title="Audio Production" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
                 <MudNavMenu>
-                    <MudNavLink Href="level1/sublevel2/sublevelA" Match="NavLinkMatch.Prefix">🎤 Recording</MudNavLink>
-                    <MudNavLink Href="level1/sublevel2/sublevelB" Match="NavLinkMatch.Prefix">🎹 Music Production</MudNavLink>
-                    <MudNavLink Href="level1/sublevel2/sublevelB" Match="NavLinkMatch.Prefix">🎙️Broadcaster</MudNavLink>
-                    <MudNavGroup Title="Sublevel C" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
-                        <MudNavMenu>
-                            <MudNavLink Href="level1/sublevel2/sublevelC/item1" Match="NavLinkMatch.Prefix">Item 1</MudNavLink>
-                            <MudNavLink Href="level1/sublevel2/sublevelC/item2" Match="NavLinkMatch.Prefix">Item 2</MudNavLink>
-                        </MudNavMenu>
-                    </MudNavGroup>
+                    <MudNavLink Href="level1/sublevel2/sublevelA" Match="NavLinkMatch.Prefix">Recording</MudNavLink>
+                    <MudNavLink Href="level1/sublevel2/sublevelB" Match="NavLinkMatch.Prefix">Music Production</MudNavLink>
+                    <MudNavLink Href="level1/sublevel2/sublevelB" Match="NavLinkMatch.Prefix">Broadcaster</MudNavLink>
                 </MudNavMenu>
             </MudNavGroup>
 
-            <MudNavGroup Title="Video Production" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
+            <MudNavGroup Title="Photo" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
+                <MudNavMenu>
+                    <MudNavLink Href="level1/sublevel2/sublevelA" Match="NavLinkMatch.Prefix">Photoshoots</MudNavLink>
+                    <MudNavLink Href="level1/sublevel2/sublevelB" Match="NavLinkMatch.Prefix">Fashion Show</MudNavLink>
+                </MudNavMenu>
+            </MudNavGroup>
+
+            <MudNavGroup Title="Video" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
                 <MudNavMenu>
                     <MudNavLink Href="level1/sublevel2/sublevelA" Match="NavLinkMatch.Prefix">Sublevel A</MudNavLink>
                     <MudNavLink Href="level1/sublevel2/sublevelB" Match="NavLinkMatch.Prefix">Sublevel B</MudNavLink>
@@ -38,6 +38,21 @@
                     </MudNavGroup>
                 </MudNavMenu>
             </MudNavGroup>
+
+            <MudNavGroup Title="NBWSM Radio" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
+                <MudNavMenu>
+                    <MudNavLink Href="level1/sublevel2/sublevelA" Match="NavLinkMatch.Prefix">Radio Synergy</MudNavLink>
+                    <MudNavLink Href="level1/sublevel2/sublevelA" Match="NavLinkMatch.Prefix">Radio Synergy 2</MudNavLink>
+                </MudNavMenu>
+            </MudNavGroup>
+
+            <MudNavGroup Title="Vendor Showcase" Icon="@Icons.Material.Filled.SubdirectoryArrowRight">
+                <MudNavMenu>
+                    <MudNavLink Href="level1/sublevel2/sublevelA" Match="NavLinkMatch.Prefix">Free Vendor Showcase</MudNavLink>
+                </MudNavMenu>
+            </MudNavGroup>
+
+            <MudNavLink Href="level1/sublevel1" Match="NavLinkMatch.Prefix">Package Upgrades & Extras</MudNavLink>
         </MudNavMenu>
     </MudNavGroup>
 </MudNavMenu>
